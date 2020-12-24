@@ -1,0 +1,78 @@
+<html> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title>Personal Information</title> 
+		<link rel="stylesheet" href="style.css"> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	</head>
+	<body> 
+		<div class="container"> 
+			<h2 class="row">Personal Details</h2> 
+			<br/><br/> 
+			<div class="row"> 
+				<form class="form-horizontal col-sm-offset-4"><b> 
+					<p>Personal Details</p>
+					<div class="input-group"> 
+						<span class="input-group-addon"> 
+							<i class="glyphicon glyphicon-pencil"></i> 
+						</span> 
+						<input type="text" class="form-control" placeholder="Enter the Name" id="name" style="width: 25vw" /> 
+					</div>  <br>
+					<div class="input-group"> 
+						<span class="input-group-addon"> 
+							<i class="glyphicon glyphicon-envelope"></i> 
+						</span> 
+						<input type="email" class="form-control" placeholder="Enter the MailID" id="email" style="width: 25vw" />
+					</div> <br>
+					<div class="input-group"> 
+						<span class="input-group-addon"> 
+							<i class="glyphicon glyphicon-user"></i> 
+						</span> 
+						<select class="form-control" id="gender" style="width: 25vw">
+							<option value="" disabled selected>Select Gender</option>
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+							<option value="Other">Other</option>
+						</select>
+					</div> <br>
+					<p>Contact Details</p>
+					<div class="input-group"> 
+						<span class="input-group-addon"> 
+							<i class="glyphicon glyphicon-home"></i> 
+						</span> 
+						<input type="text" class="form-control" placeholder="Enter the Address" id="address" style="width: 25vw" />
+					</div> <br>	
+					<div class="input-group"> 
+						<span class="input-group-addon"> 
+							<i class="glyphicon glyphicon-calendar"></i> 
+						</span> 
+						<input type="text" class="form-control" placeholder="City" id="city" style="width: 25vw" />
+					</div> <br>	
+					<div class="input-group"> 
+						<span class="input-group-addon"> 
+							<i class="glyphicon glyphicon-map-marker"></i> 
+						</span> 
+						<select class="form-control" id="state" style="width: 25vw">
+							<option value="" disabled selected>Select State</option>
+							<option value="Tamilnadu">Tamilnadu</option>
+							<option value="Kerala">Kerala</option>
+							<option value="Karnataka">Karnataka</option>
+						</select>
+					</div> <br>
+					<div class="input-group"> 
+						<span class="input-group-addon"> 
+							<i class="glyphicon glyphicon-phone"></i> 
+						</span> 
+						<input type="text" class="form-control" placeholder="Phone No" id="phoneno" style="width: 25vw" />
+					</div> <br>	
+					<div class="form-group">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="button" class=" btn btn-primary form-control" value="Submit" style="width: 10vw" onclick="add_item()" /> 
+						<input type="reset"	class=" btn btn-primary form-control" value="Reset" style="width: 10vw"/> 
+					</div>
+				</form>
+				<P id="output"></P>
+				<script src="per.js"></script>
+			</div> 
+		</div>
+	</body>		
+</html>				
